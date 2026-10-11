@@ -6,7 +6,13 @@
   },
   "steps": {
     "build": {
-      "commands": ["...", "npm run build"]
+      "commands": [
+        "...",
+        "npm run build"
+      ]
     }
+  },
+  "deploy": {
+    "startCommand": "npm run start"
   }
 }
