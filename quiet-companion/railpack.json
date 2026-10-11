@@ -1,0 +1,17 @@
+{
+  "$schema": "https://railpack.com",
+  "provider": "staticfile",
+  "steps": {
+    "build": {
+      "commands": ["...", "npm run build"]
+    }
+  },
+  "deploy": {
+    "inputs": [
+      {
+        "step": "build",
+        "include": ["dist"]
+      }
+    ]
+  }
+}
